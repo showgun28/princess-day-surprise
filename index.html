@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#210b35">
+  <meta name="description" content="A little Princess Day surprise made with love.">
+  <title>A Little Surprise for Princess</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <main>
+    <section class="scene hero" id="home">
+      <div class="night-sky" id="stars" aria-hidden="true"></div>
+      <div class="glow glow-one"></div><div class="glow glow-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">A LITTLE SURPRISE, JUST FOR YOU</p>
+        <div class="crown">♕</div>
+        <h1>IT'S <span>PRINCESS</span><br>DAY</h1>
+        <p class="hero-sub">Tonight, the stars have something to tell you...</p>
+        <button class="primary-btn" data-go="letter">Open your surprise <span>✦</span></button>
+        <p class="tiny-note">made with a little magic ♡</p>
+      </div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="scene paper-scene" id="letter">
+      <div class="paper-topline">A LITTLE SOMETHING, JUST FOR YOU</div>
+      <div class="paper-wrap">
+        <div class="paper-icon">♡</div>
+        <p class="eyebrow">CHAPTER ONE · A NOTE FROM THE HEART</p>
+        <h2>For our very own<br><em>Princess</em></h2>
+        <p class="intro">Some days deserve a little extra magic.<br>Today, this tiny corner of the internet is all yours.</p>
+        <button class="envelope" id="openLetter" aria-label="Open your letter">
+          <span class="envelope-flap"></span><span class="envelope-front"></span>
+          <span class="wax-seal">♥</span><span class="envelope-hint">TAP TO OPEN</span>
+        </button>
+        <article class="letter-card" id="letterCard" aria-live="polite">
+          <div class="letter-ornament">✿</div>
+          <p class="letter-kicker">A NOTE FOR YOU</p>
+          <h3>Happy Princess Day!</h3>
+          <p>I hope you never forget how special you are. May your days always be filled with laughter, warmth, sweet little moments, and people who remind you how wonderful you are.</p>
+          <p>You don't need a crown to be a princess. Your kindness, your smile, and the way you make the world brighter already say it all.</p>
+          <p class="signature">With a little love, <span>♡</span></p>
+        </article>
+        <button class="text-btn next-letter" data-go="garden">A flower is waiting for you ↓</button>
+      </div>
+    </section>
+
+    <section class="scene garden-scene" id="garden">
+      <div class="paper-topline">CHAPTER TWO · LITTLE THINGS THAT MAKE YOU SMILE</div>
+      <div class="garden-content">
+        <p class="eyebrow">A TINY GARDEN FOR YOU</p>
+        <h2>A flower for every<br><em>little lovely thing</em></h2>
+        <p class="garden-intro">Tap the little buds and watch your garden bloom.<br>This garden is growing with good wishes.</p>
+        <div class="garden" id="gardenBed" aria-label="Interactive flower garden">
+          <div class="sun">☼</div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+          <div class="ground"></div>
+          <button class="flower-spot f1" aria-label="Grow flower one"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bud">✿</span></button>
+          <button class="flower-spot f2" aria-label="Grow flower two"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bud">✿</span></button>
+          <button class="flower-spot f3" aria-label="Grow flower three"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bud">✿</span></button>
+          <button class="flower-spot f4" aria-label="Grow flower four"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bud">✿</span></button>
+          <button class="flower-spot f5" aria-label="Grow flower five"><span class="stem"></span><span class="leaf left"></span><span class="leaf right"></span><span class="bud">✿</span></button>
+        </div>
+        <p class="garden-counter" id="gardenCounter">0 / 5 flowers have bloomed</p>
+        <p class="garden-note" id="gardenNote">Every flower is a little wish for you. ♡</p>
+        <button class="primary-btn rose-btn" data-go="gift">See your final surprise <span>✦</span></button>
+      </div>
+    </section>
+
+    <section class="scene gift-scene" id="gift">
+      <div class="gift-sparkles" aria-hidden="true">✦　·　✧　·　✦</div>
+      <p class="eyebrow">CHAPTER THREE · ONE LAST LITTLE SURPRISE</p>
+      <h2>A little happiness,<br><em>just for you</em></h2>
+      <p class="gift-caption">Because even ordinary days deserve a little magic.</p>
+      <button class="gift-box" id="giftBox" aria-label="Open the gift">
+        <span class="gift-lid"><i></i></span><span class="gift-body"><i></i></span>
+        <span class="gift-bow">✧</span>
+      </button>
+      <p class="tap-hint" id="giftHint">TAP THE GIFT TO OPEN</p>
+      <div class="final-message" id="finalMessage">
+        <div class="final-flower">✿</div>
+        <p class="eyebrow">A LITTLE REMINDER</p>
+        <h3>Keep shining, Princess.</h3>
+        <p>Never stop being the lovely person you are. You deserve happiness, kindness, and all the beautiful little things life has to offer.</p>
+        <p class="final-sign">Your day. Your magic. Your smile. <span>♡</span></p>
+      </div>
+      <footer>MADE WITH ♡, JUST FOR PRINCESS</footer>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
